@@ -1,6 +1,6 @@
 
 
-// Базовый URL и ключ API (замените на свой ключ при необходимости)
+// Базовый URL и ключ API
 const API_BASE = 'https://exam-api-courses.std-900.ist.mospolytech.ru/api';
 const API_KEY = '2d3260ba-f2ad-4b0a-944f-2d267c6ae53a';
 
