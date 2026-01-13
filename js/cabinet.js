@@ -1,7 +1,7 @@
 // Скрипт для страницы личного кабинета
 // Загрузка и отображение заявок, а также возможность их просматривать, редактировать и удалять.
 
-const API_BASE = 'http://exam-api-courses.std-900.ist.mospolytech.ru/api';
+const API_BASE = 'https://exam-api-courses.std-900.ist.mospolytech.ru/api';
 const API_KEY = '2d3260ba-f2ad-4b0a-944f-2d267c6ae53a';
 
 let orders = [];
