@@ -1,0 +1,135 @@
+
+:root {
+  /* Палитра на основе сочетания фиолетовых и голубых оттенков. */
+  --bs-primary: #5e60ce;    /* насыщенный индиго для акцентных элементов */
+  --bs-secondary: #4ea8de;  /* светлый голубой для второстепенных элементов */
+  --bs-success: #52b788;    /* свежий зелёный для позитивных действий */
+  --bs-info: #56cfe1;       /* бирюзовый оттенок для информационных блоков */
+  --bs-warning: #ffba08;    /* ярко‑жёлтый для предупреждений */
+  --bs-danger: #e63946;     /* тёплый красный для ошибок */
+  --bs-light: #f5f7fb;      /* очень светлый голубовато‑серый фон */
+  --bs-dark: #343a40;       /* тёмный серо‑синий для контрастных текстов */
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+ 
+  background: linear-gradient(180deg, var(--bs-light) 0%, #eaf4ff 100%);
+}
+
+/* Шапка */
+.navbar {
+  
+  background: linear-gradient(90deg, var(--bs-primary) 0%, var(--bs-secondary) 100%) !important;
+  border: none;
+}
+.navbar .navbar-brand,
+.navbar .nav-link {
+  color: #ffffff !important;
+  font-weight: 500;
+}
+.navbar .nav-link:hover {
+  color: #ffffff !important;
+  text-decoration: underline;
+}
+
+#notifications .alert {
+  margin-bottom: 1rem;
+}
+
+
+#tutorsTable tbody tr.selected {
+  
+  background-color: rgba(94, 96, 206, 0.15);
+}
+
+/* Карточки курсов */
+.course-card {
+  height: 100%;
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease;
+}
+.course-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Сжимать длинные описания курсов в карточках */
+.course-description {
+  max-height: 4.5rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Footer: тёмный бар с разделённой информацией */
+footer {
+  background-color: #020d2f; /* почти чёрный синеватый оттенок */
+  color: #ffffff;
+}
+footer a {
+  color: var(--bs-info);
+}
+footer a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+/* Модальные окна */
+.modal-content {
+  border-radius: 0.5rem;
+}
+
+/* Кнопки */
+.btn-primary {
+  background-color: var(--bs-primary) !important;
+  border-color: var(--bs-primary) !important;
+}
+.btn-primary:hover {
+  /* Насыщенный оттенок для hover‑состояния индиго‑кнопки */
+  background-color: #5152b7 !important;
+  border-color: #5152b7 !important;
+}
+.btn-outline-primary {
+  color: var(--bs-primary) !important;
+  border-color: var(--bs-primary) !important;
+}
+.btn-outline-primary:hover {
+  background-color: var(--bs-primary) !important;
+  color: #fff !important;
+}
+
+/* Кнопка выбора репетитора после выбора. Используется в JS для маркировки выбранного репетитора */
+.btn-selected {
+  background-color: var(--bs-success) !important;
+  border-color: var(--bs-success) !important;
+  color: #fff !important;
+}
+
+/* Секция карты учебных ресурсов */
+#resourcesMap {
+  height: 400px;
+  width: 100%;
+  min-height: 300px;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.06);
+}
+
+/* Карточки в списке учебных ресурсов */
+#resourcesList .card {
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease;
+}
+#resourcesList .card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Отдельный стиль для маркеров на статической карте */
+.resource-marker:hover {
+  transform: scale(1.3);
+  z-index: 100;
+}

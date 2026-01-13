@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Учебные ресурсы</title>
+    
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  
+    <link rel="stylesheet" href="css/style.css" />
+  
+    <script
+      src="https://api-maps.yandex.ru/2.1/?apikey=1df6324d-3869-4eb1-a57d-42aafd62542f&lang=ru_RU"
+      type="text/javascript"
+    ></script>
+  </head>
+  <body>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark shadow-sm">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">Языковая школа</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html#courses">Курсы</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#tutors">Репетиторы</a></li>
+            <li class="nav-item"><a class="nav-link active" href="resources.html">Ресурсы</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#about">О нас</a></li>
+            <li class="nav-item"><a class="nav-link" href="cabinet.html">Личный кабинет</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+ 
+    <div id="notifications" class="container mt-3"></div>
+
+  
+    <main class="container mt-4">
+      <h2 class="mb-3">Учебные ресурсы</h2>
+      <div class="row g-4">
+        
+        <div class="col-12 col-lg-6">
+          <div id="resourcesMap" class="rounded-2"></div>
+        </div>
+      
+        <div class="col-12 col-lg-6">
+          <div id="resourcesList"></div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Футер -->
+    <footer class="py-4 mt-auto border-top">
+      <div class="container text-center text-md-start">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-4 mb-3">
+            <h6 class="fw-bold">Почта</h6>
+            <p class="mb-0"><a href="mailto:languageschool123@mail.ru" class="text-decoration-none">languageschool123@mail.ru</a></p>
+          </div>
+          <div class="col-12 col-md-4 mb-3">
+            <h6 class="fw-bold">Телефон</h6>
+            <p class="mb-0"><a href="tel:89555555555" class="text-decoration-none">8&nbsp;955&nbsp;555&nbsp;55&nbsp;55</a></p>
+          </div>
+          <div class="col-12 col-md-4 mb-3">
+            <h6 class="fw-bold">Соцсети</h6>
+            <p class="mb-0"><a href="#" class="text-decoration-none">ВКонтакте</a></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    ></script>
+    <!-- Скрипт для отображения карты и списка ресурсов -->
+    <script src="js/resources.js"></script>
+  </body>
+</html>
